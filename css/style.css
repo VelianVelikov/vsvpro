@@ -1,17 +1,78 @@
-@import url('https://fonts.googleapis.com/css?family=Comfortaa:700');
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro:700');
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro:500');
+@import url('https://fonts.googleapis.com/css?family=Karla');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
 
-h1#logo {
+body {
+  background: #77c3f5;
+  font-family: 'Quicksand', sans-serif;
+  color: #333333;
+}
+
+body::-webkit-scrollbar-track
+{
+
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    /*border-radius: 10px;*/
+    background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar
+{
+
+    width: 7px;
+    background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb
+{
+    /*border-radius: 10px;*/
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #fc913f;
+}
+
+header {
+  background: #f5f5f5;
+  color: #333333;
+  padding: 1em 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 4px 2px -2px gray;
+}
+
+header::after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+.container {
+  width: 95%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+a.logo {
+  font-size: 25px;
   float: left;
-  animation: typing-text 3s steps(13), blink 0.5s infinite alternate;
+  animation: typing-text 3s steps(11), blink 0.5s infinite alternate;
   overflow: hidden;
   white-space: nowrap;
   border-right: 3px solid #000;
-  font-family: 'Comfortaa', cursive;
-  font-weight: 700;
+  font-family: 'Maven Pro', sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+a.logo:hover,
+a.logo:active {
+  color: #333333;
 }
 
 span#logo-orange {
-  color: #fc913f
+  color: #fc913f;
+  font-weight: 700;
 }
 
 span#logo-blue {
@@ -23,7 +84,7 @@ span#logo-blue {
     width: 2ch;
   }
   to {
-    width: 13ch;
+    width: 11ch;
   }
 }
 
@@ -34,4 +95,154 @@ span#logo-blue {
   to {
     border-color: #000;
   }
+}
+
+.site-nav {
+  position: absolute;
+  top: 100%;
+  right: 0%;
+  background: #f5f5f5;
+  clip-path: circle(0px at top right);
+  box-shadow: -2px 4px 2px -2px gray;
+  transition: clip-path ease-in-out 700ms;
+/*   display: none; */
+}
+
+.site-nav--open {
+  clip-path: circle(250% at top right);
+/*   display: block; */
+}
+
+.site-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-nav li {
+  border-bottom: 1px solid #ededed;
+}
+
+.site-nav li:last-child {
+  border-bottom: none;
+}
+
+.site-nav a {
+  color: #333333;
+  display: block;
+  padding: 24px 48px 24px 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
+  background: #ededed;
+  color: #4cabeb;
+}
+
+.site-nav--icon {
+  display: inline-block;
+  font-size: 1.5em;
+  margin-right: 1em;
+  width: 1.1em;
+  text-align: right;
+  color: #333333;
+}
+
+.menu-toggle {
+  padding: 1em;
+  position: absolute;
+  top: .5em;
+  right: .5em;
+  cursor: pointer;
+  margin-top: 3px;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  content: '';
+  display: block;
+  background: #333333;
+  height: 3px;
+  width: 1.75em;
+  border-radius: 3px;
+  transition: all ease-in-out 500ms;
+}
+
+.hamburger::before {
+  transform: translateY(-6px);
+}
+
+.hamburger::after {
+  transform: translateY(3px);
+}
+
+.open .hamburger {
+  transform: rotate(45deg);
+}
+
+.open .hamburger::before {
+  opacity: 0;
+}
+
+.open .hamburger::after {
+  transform: translateY(-3px) rotate(-90deg);
+}
+
+@media (min-width: 700px) {
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .site-nav {
+    height: auto;
+    position: relative;
+    background: transparent;
+    float: right;
+    clip-path: initial;
+    box-shadow: none;
+    margin-top: 5px;
+  }
+
+  .site-nav li {
+    display: inline-block;
+    border: none;
+  }
+
+  .site-nav a {
+    padding: 0;
+    margin-left: 3em;
+  }
+
+  .site-nav a:hover,
+  .site-nav a:focus {
+    background: transparent;
+  }
+
+  .site-nav--icon {
+    display: none;
+  }
+}
+
+a.back-to-top {
+    display: none;
+    width: 60px;
+    height: 60px;
+    text-indent: -9999px;
+    position: fixed;
+    z-index: 999;
+    right: 20px;
+    bottom: 20px;
+    background: #fc913f url("../img/up-arrow.png") no-repeat center 43%;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+a.back-to-top:hover {
+    background: #fc7e3f url("../img/up-arrow.png") no-repeat center 43%;
 }
