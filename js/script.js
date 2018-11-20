@@ -16,7 +16,7 @@ $(document).ready(function () {
 
 
   $(window).scroll(function () {
-      if ($('header').offset().top < 45){
+      if ($('header').offset().top == 0){
         $('.arrow').show();
       }
       else {

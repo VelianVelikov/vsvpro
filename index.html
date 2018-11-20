@@ -2,12 +2,15 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>VSVPro.com - My Personal Website</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="css/cssReset.css">
     <link href="css/animate.css" rel="stylesheet"/>
     <link href="css/waypoints.css" rel="stylesheet"/>
     <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script> -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="js/jquery.waypoints.min.js" type="text/javascript"></script>
     <script src="js/waypoints.js" type="text/javascript"></script>
@@ -25,7 +28,7 @@
     <!--start sticky header-->
     <header>
       <div class="container">
-        <a class="logo" href="">!&gt; <span id="logo-orange">VSV</span><span id="logo-blue">Pro.com</span></a>
+        <a id="logo" href="">!&gt; <span id="logo-orange">VSV</span><span id="logo-blue">Pro.com</span></a>
         <nav class="site-nav">
           <ul>
             <li><a href=""><i class="fa fa-home site-nav--icon"></i>Home</a></li>
@@ -43,7 +46,7 @@
     <!--end sticky header-->
 
     <!--start landing page-->
-    <!--here I am using Animate.css for the animation-->
+    <!--here I am using https://daneden.github.io/animate.css/ for the animation-->
     <section class="intro">
       <div class="middle-vertically">
         <div class="leading-card os-animation" data-os-animation="bounceInUp" data-os-animation-delay="0s">
@@ -68,14 +71,52 @@
     </section>
     <!--end landing page-->
 
-	<p>HTML uses special bits of programming language called "tags" to let the browser know how a webpage should look. The tags usually come in pairs: an opening tag to tell the browser when to start doing something, and an ending tag to tell the browser when to stop doing something. There are many different kinds of tags, and each one has a different purpose.</p>
+    <!-- start quote -->
+    <section class="landing-quote-holder">
+      <div class="middle-vertically">
+        <div class="landing-quote">
+          <blockquote>
+            The scientists of today think deeply instead of clearly. One must be sane to think clearly, but one can think deeply and be quite insane.
+          </blockquote>
+          <cite>Nicola Tesla</cite>
+        </div>
+      </div>
+    </section>
+    <!-- end quote -->
 
-	<p>Cascading Style Sheets (CSS) and JavaScript can be included in HTML code. CSS is used to change how a webpage looks. JavaScript is used to add features to webpages and make them more interactive.</p>
+    <div class="clearfix"></div>
 
-	<p>One of the aims of HTML5 is to remove the need to use third-party software like Adobe Flash, because it is often slow on mobile devices like phones and can be used to infect your computer with viruses. Another aim is to reduce the amount of program code (JavaScript) running in each webpage, thus making the web faster.</p>
+    <!-- Start inner wrapper -->
+    <div class="inner-wrapper">
+      <section class="one-third">
+        <div class="circle">
+          <td><i class="fa fa-users"></i></td>
+        </div>
+        <h3>Dummy text asd</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </section>
+      <section class="one-third">
+        <div class="circle">
+          <td><i class="fa fa-map-marker"></i></td>
+        </div>
+        <h3>Dummy text asd</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </section>
+      <section class="one-third">
+        <div class="circle">
+          <td><i class="far fa-check-square"></i></td>
+        </div>
+        <h3>Dummy text asd</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </section>
 
-	<p>HTML was made by the World Wide Web Consortium (W3C). There are many versions of HTML. The current standard is HTML 4.01. So, it is the version the W3C recommends. A newer version, called HTML5, will become standard within the next few years. The W3C also develops XHTML. This is another markup language which is very similar to HTML, but more strict.</p>
+      <div class="clearfix"></div>
 
+      <article>
+
+      </article>
+    </div>
+    <!-- End inner wrapper  -->
 
   </body>
 </html>
