@@ -6,6 +6,25 @@ $(document).ready(function () {
 
   });
 
+  var square = $('.square');
+  var info_box = $('info-box');
+  var width = square.width() / 3;
+
+  square.css('height', width);
+  info_box.css('height', width);
+  info_box.css('margin-top', -width);
+
+
+  $(window).scroll(function () {
+      if ($('header').offset().top < 45){
+        $('.arrow').show();
+      }
+      else {
+        $('.arrow').css('display', 'none');
+      }
+  });
+
+
   //                Start back-to-top button jQuery
                 $('body').prepend('<a href="#" class="back-to-top">Back to Top</a>');
                 var amountScrolled = 300;
@@ -23,4 +42,16 @@ $(document).ready(function () {
                     }, 2000);
                 });
 //                End back-to-top button jQuery
+
+
+$( window ).resize(function() {
+    var square = $('.square');
+    var info_box = $('info-box');
+    var width = square.width() / 3;
+
+    square.css('height', width);
+    info_box.css('height', width);
+    info_box.css('margin-top', -width);
+});
+
 });
