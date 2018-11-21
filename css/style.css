@@ -46,7 +46,7 @@ body::-webkit-scrollbar-thumb
 
 /*Start header, logo and menu*/
 header {
-  z-index: 100;
+  z-index: 1000;
   background: #f5f5f5;
   color: #333333;
   padding: 16px 0;
@@ -156,6 +156,7 @@ span#logo-blue {
 
 .site-nav a:hover,
 .site-nav a:focus {
+  text-decoration: underline;
   background: #ededed;
   color: #4cabeb;
 }
@@ -375,7 +376,111 @@ a.back-to-top:hover {
 
 /* End quote */
 
-@media (min-width: 780px) {
+/* Start landing tiles */
+
+.landing-tiles {
+  margin-top: 20px;
+}
+
+.landing-tiles .corner {
+  margin-left: -10px;
+}
+
+.first-wrapper {
+  border-left: 20px solid transparent;
+  width: 100%;
+  height: auto;
+  background: #f5f5f5;
+  box-shadow: -2px 3px 2px -2px gray;
+  margin-left: -10px;
+}
+
+.landing-tiles section {
+  margin-bottom: 20px;
+}
+
+.second-wrapper {
+  padding-bottom: 20px;
+  padding-right: 20px;
+  /* background: purple; */
+  text-align: center;
+}
+
+.second-wrapper .circle {
+  width: 150px;
+  height: 150px;
+  background: #fc913f;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: -2px 3px 2px -2px gray;
+}
+
+.second-wrapper i {
+  color: #f5f5f5;
+  font-size: 555%;
+  padding-top: 20%;
+}
+
+.second-wrapper h3{
+  font-size: 40px;
+  /* background: yellow; */
+}
+
+.second-wrapper p {
+  /* background: green; */
+  padding: 10px 10px 0 10px;
+  text-align: justify;
+  text-justify: inter-character;
+}
+/* End landing tiles */
+
+/* Start inner wrapper */
+#wrapper h3,
+footer h3 {
+  font-size: 40px;
+  padding: 2% 0;
+}
+
+#wrapper h4 {
+  font-size: 30px;
+  padding: 2% 0;
+}
+
+#wrapper img {
+  max-width: 100%;
+}
+
+footer h5 {
+  font-size: 20px;
+  color: #959595;
+}
+
+#wrapper {
+  width: 75%;
+  /* background: yellow; */
+  /* !!!!!delete this bottom margin */
+  margin: 20px auto 20px auto;
+}
+
+.one-third {
+  width: 33%;
+  height: 100%;
+  float: left;
+  /* background: yellow; */
+  border-right: 3px solid #77c3f5;
+}
+
+
+
+
+.clear {
+  clear: both;
+}
+
+/* End inner wrapper */
+
+@media (min-width: 768px) {
 
   .container {
     width: 85%;
@@ -422,7 +527,7 @@ a.back-to-top:hover {
     height: 100%;
     width: 100%;
     margin: 45px auto 0 auto;
-    background: url("../img/2k-background.png") no-repeat center center;
+    background: url("../img/2k-background-mobile.png") no-repeat center center;
     background-size: cover;
     display: table;
     margin-top: 0px;
@@ -455,9 +560,31 @@ a.back-to-top:hover {
       font-size: 2vw;
   }
   /* End quote */
+
+  /*This thing from here to ....*/
+  .landing-tiles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  section.tile:nth-child(1) {
+    width: 48%;
+    margin-right: 2%;
+  }
+
+  section.tile:nth-child(2) {
+    width: 48%:
+  }
+
+  section.tile:nth-child(3) {
+    flex: 0 0 100%;
+    width: 100%;
+  }
+  /* ....here creates equal space betwenn 50% elements + 100%*/
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1025px) {
 
   .container {
     width: 75%;
@@ -504,4 +631,31 @@ a.back-to-top:hover {
   }
 
   /* End quote */
+
+  /*This thing from here to ....*/
+  .landing-tiles {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  section.tile {
+    flex: 1;
+  }
+
+  section.tile:nth-child(1) {
+    width: 33%;
+    margin-right: 0;
+  }
+
+  section.tile:nth-child(2) {
+    width: 33%;
+    margin: 0 20px;
+  }
+
+  section.tile:nth-child(3) {
+    flex: 0 0 33%;
+    width: 33%;
+    margin-top: 0;
+  }
+  /* ....here creates equal space betwenn 33% elements */
 }
