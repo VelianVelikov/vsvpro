@@ -15,7 +15,7 @@ $(document).ready(function () {
   info_box.css('margin-top', -width);
 
   // i substituted 7px becouse this is the width of the scrollbar
-  if ($(window).width() > 1017){
+  if ($(window).width() >= 1017){
     console.log('desktop');
 
     $ (function () {
@@ -74,7 +74,7 @@ $(window).resize(function () {
   $ ('section.tile:nth-child(2) .second-wrapper').css('height', 'auto');
   $ ('section.tile:nth-child(3) .second-wrapper').css('height', 'auto');
 
-  if ($(window).width() > 1017){
+  if ($(window).width() >= 1017){
     console.log('desktop');
 
     var biggest = 0;
