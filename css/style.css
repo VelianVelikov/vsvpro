@@ -403,7 +403,7 @@ a.back-to-top:hover {
   padding-bottom: 20px;
   padding-right: 20px;
   /* background: purple; */
-  text-align: center;
+  overflow: hidden;
 }
 
 .second-wrapper .circle {
@@ -423,15 +423,24 @@ a.back-to-top:hover {
 }
 
 .second-wrapper h3{
-  font-size: 40px;
+  width: 100%;
+  font-size: 11.5vw;
+  text-align: center;
+  padding-top: 5px;
   /* background: yellow; */
 }
 
+.second-wrapper .p-wrapper {
+  height: 100%;
+  padding-top: 10px;
+}
 .second-wrapper p {
   /* background: green; */
-  padding: 10px 10px 0 10px;
-  text-align: justify;
-  text-justify: inter-character;
+  text-align:justify;
+  font-size: 5vw;
+  line-height: 6vw;
+  /* text-justify:inter-character; */
+  /* word-break: break-all; */
 }
 /* End landing tiles */
 
@@ -471,16 +480,13 @@ footer h5 {
   border-right: 3px solid #77c3f5;
 }
 
-
-
-
 .clear {
   clear: both;
 }
 
 /* End inner wrapper */
 
-@media (min-width: 768px) {
+@media (min-width: 767px) {
 
   .container {
     width: 85%;
@@ -582,9 +588,20 @@ footer h5 {
     width: 100%;
   }
   /* ....here creates equal space betwenn 50% elements + 100%*/
+
+  /* start tiles font size */
+  .second-wrapper h3{
+    font-size: 5.5vw;
+  }
+
+  .second-wrapper p {
+    font-size: 2.5vw;
+    line-height: 3vw;
+  }
+  /* end tiles font size */
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
 
   .container {
     width: 75%;
@@ -658,4 +675,15 @@ footer h5 {
     margin-top: 0;
   }
   /* ....here creates equal space betwenn 33% elements */
+
+  /* start tiles font size */
+  .second-wrapper h3{
+    font-size: 2.7vw;
+  }
+
+  .second-wrapper p {
+    font-size: 1.3vw;
+    line-height: 1.9vw;
+  }
+  /* end tiles font-size */
 }
