@@ -4,12 +4,14 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
 @import url('https://fonts.googleapis.com/css?family=Sanchez:400i');
 
+
 html,body {
 	margin: 0;
 	padding: 0;
 	height: 100%;
 	width: 100%;
 }
+
 
 body {
   background: white;
@@ -559,8 +561,8 @@ footer .grid-container section:nth-child(3) p{
 }
 
 .canvas-second-wrapper {
-  padding-bottom: 20px;
-  padding-right: 20px;
+	padding-bottom: 20px;
+  margin-right: 20px;
   /* background: purple; */
   overflow: hidden;
 }
@@ -583,22 +585,21 @@ footer .grid-container section:nth-child(3) p{
   max-width: 30%;
 	display: inline;
 	float: left;
-	margin-right: 20px;
-	margin-bottom: 20px
+	margin-right: 2%;
 }
 
 .canvas-second-wrapper .personal-image img {
 	width: 100%;
 }
 
-.canvas-second-wrapper i {
+.canvas-second-wrapper .circle i {
   color: #f5f5f5;
   font-size: 555%;
   padding-top: 20%;
 }
 
 .canvas-second-wrapper h3{
-  font-size: 7.5vw;
+  font-size: 7vw;
   /* background: yellow; */
 }
 
@@ -609,24 +610,132 @@ footer .grid-container section:nth-child(3) p{
 .canvas-second-wrapper p {
   /* background: green; */
   text-align:justify;
-  font-size: 5vw;
-  line-height: 6vw;
+  font-size: 4vw;
+  line-height: 5vw;
   /* text-justify:inter-character; */
   /* word-break: break-all; */
 }
 
-.canvas-second-wrapper p:not(:last-child) {
+.grid-100 .canvas-second-wrapper p:not(:last-child) {
 	margin-bottom: 10px;
 }
 
-.canvas-second-wrapper p:not(:first-child) {
+.grid-100 .canvas-second-wrapper p:not(:first-child) {
 	text-indent: 25px;
 }
 
+.canvas-second-wrapper .personal-details {
+      margin: 20px 0;
+      padding: 0;
+      list-style-type: none;
+			line-height: 20px;
+  }
 
+	.canvas-second-wrapper .contact-details {
+				margin: 10px 0;
+	      padding: 0;
+	      list-style-type: none;
+				line-height: 20px;
+	  }
+
+
+.canvas-second-wrapper ul{
+		list-style-type: none;
+		padding-left: 0px;
+	}
+
+.canvas-second-wrapper ul li {
+	        margin-bottom: 6px;
+	    }
+.canvas-second-wrapper ul li i {
+	          width: 18px;
+	          text-align: center;
+	          margin-right: 5px;
+	          margin-left: 3px;
+	        }
+
+.about-tiles .canvas {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.about-tiles section.canvas:nth-child(1) {
+	width: 100%;
+	margin-right: 0;
+}
+
+.about-tiles section.canvas:nth-child(2) {
+	width: 100%:
+}
+
+.skills {
+  text-align: right;
+  padding: 10px;
+  color: white;
+	margin: 5px 0;
+}
+
+.html {width: 90%; background-color: #4CAF50;}
+.css {width: 80%; background-color: #2196F3;}
+.js {width: 65%; background-color: #f44336;}
+.php {width: 60%; background-color: #808080;}
+
+.sing {width: 5%; background-color: #4CAF50;}
+.movie {width: 80%; background-color: #2196F3;}
+.sleep {width: 100%; background-color: #f44336;}
+.read {width: 40%; background-color: #808080;}
 
 /* End projects page */
 
+/*Start contact form */
+/* Source https://codepen.io/amanda89/pen/wbHtz?editors=0110 */
+#contactForm {
+		margin-top: 20px;
+}
+
+#contactForm input, textarea {
+		letter-spacing: 2px;
+		font: 200 1em/1.1em 'Helvetica Neue', sans-serif;
+
+		color: #000;
+		background-color: #f5f5f5;
+
+		outline: none; border: none;
+
+		display:block;
+		margin: 0 auto;
+		padding: 1em;
+		width: 100%;
+}
+
+#contactForm textarea {
+height: 150px;
+}
+
+#contactForm *:focus {
+ background-color: #ededed;
+}
+
+#contactForm *:hover {
+ background-color: #ededed;
+}
+
+::-webkit-input-placeholder {
+		color: #777;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+		color: #777;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+	color: #777;
+}
+
+:-ms-input-placeholder {
+		 color: #777;
+}
+/* End contact form */
 @media (min-width: 767px) {
 
   .container {
@@ -715,25 +824,6 @@ footer .grid-container section:nth-child(3) p{
     justify-content: space-between;
   }
 
-	.about-tiles {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-	.about-tiles .canvas {
-		margin-top: 20px;
-	}
-
-	.about-tiles section.canvas:nth-child(1) {
-		width: 48%;
-		margin-right: 2%;
-	}
-
-	.about-tiles section.canvas:nth-child(2) {
-		width: 48%:
-	}
-
   section.tile:nth-child(1) {
     width: 48%;
     margin-right: 2%;
@@ -816,8 +906,23 @@ footer .grid-container section:nth-child(3) p{
 	}
 
 	.canvas-second-wrapper p {
-		font-size: 2.5vw;
+		font-size: 2vw;
 		line-height: 3vw;
+	}
+
+	.about-tiles {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	.about-tiles section.canvas:nth-child(1) {
+		width: 48%;
+		margin-right: 2%;
+	}
+
+	.about-tiles section.canvas:nth-child(2) {
+		width: 48%:
 	}
 	/* end projectpage*/
 }
