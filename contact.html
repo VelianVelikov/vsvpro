@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta  name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
-    <title>Contact : VSVPro.com - My Personal Website</title>
+    <title>Contact : VSVPro.com - Personal Website</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="css/1.2.3-unsemantic-grid-responsive-tablet.css">
     <link rel="stylesheet" href="css/cssReset.css">
@@ -30,7 +30,7 @@
     <!--start sticky header-->
     <header>
       <div class="container">
-        <a id="logo" href="index.html">!&gt; <span id="logo-orange">VSV</span><span id="logo-blue">Pro.com</span></a>
+        <a id="logo" href="index.html">$&gt; <span id="logo-orange">VSV</span><span id="logo-blue">Pro.com</span></a>
         <nav class="site-nav">
           <ul>
             <li><a href="index.html"><i class="fa fa-home site-nav--icon"></i>Home</a></li>
@@ -55,14 +55,16 @@
             <h3>Contact info</h3>
             <div class="p-wrapper">
               <ul class="contact-details">
-                <li><i class="fab fa-skype"></i>Skype: vsvelikov</li>
-                <li><i class="fa fa-phone-square"></i>Mobile: +44 058 055 0558</li>
-                <li><i class="fa fa-envelope"></i>Personal: <a href="mailto:vsvelikov@dundee.ac.uk">vsvelikov@dundee.ac.uk</a></li>
-                <li><i class="fas fa-briefcase"></i>Business: <a href="mailto:vsvelikov@dundee.ac.uk">vsvelikov@dundee.ac.uk</a></li>
-                <li><i class="fas fa-map-marked-alt"></i>Address: Nethergate, Dundee DD1 4HN, UK</li>
+                <li><i class="fab fa-skype"></i>Skype: <a href="https://join.skype.com/invite/ai5AHEOKCJF0">velian99</a></li>
+                <li><i class="fa fa-phone-square"></i>Mobile: +44 7749 469760</li>
+                <li><i class="fa fa-envelope"></i>Personal: <a href="mailto:velian.s.velikov@gmail.com">velian.s.velikov@gmail.com</a></li>
+                <li><i class="fas fa-briefcase"></i>Academic: <a href="mailto:v.velikov.20@abdn.ac.uk">v.velikov.20@abdn.ac.uk</a></li>
+                <li><i class="fas fa-map-marked-alt"></i>Location: King's College, Aberdeen AB24 3FX, UK</li>
               </ul>
-              <iframe width="100%" height="257px" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17636.043473604568!2d-3.0289175333258234!3d56.45905318016679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48865cb89a2d3b2b%3A0x8580bd23131296a7!2sUniversity+of+Dundee!5e0!3m2!1sen!2suk!4v1542839982678" frameborder="0" style="border:0" allowfullscreen></iframe>            </div>
-          </div>
+              <iframe width="100%" height="257px" src="https://maps.google.com/maps?width=100%25&amp;height=257&amp;hl=en&amp;q=University%20of%20Aberdeeen,%20Aberdeen%20AB24%203FX%20+(University%20of%20Aberdee)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+			  
+
+		  </div>
         </div>
       </section>
       <section class="canvas grid-50 mobile-grid-100 tablet-grid-50">
@@ -70,17 +72,26 @@
         <div class="canvas-wrapper">
           <div class="canvas-second-wrapper">
             <h3>Contact form</h3>
-            <form id="contactForm" onsubmit="return validate()" action="contact.html" method="post">
+            <!-- <form id="contactForm" onsubmit="return validate()" action="contact.html" method="post"> -->
 
-                       <input class="formInput" type="text" id="name" name="name" placeholder="Name?"/>
-                       <input class="formInput" type="email" name="email" id="email" autocapitalize="off" autocorrect="off" placeholder="Email?"/>
-                       <textarea class="formInput" name="message" id="message" placeholder="Message?"></textarea>
+                <!-- <input class="formInput" type="text" id="name" name="name" placeholder="Name?"/> -->
+                <!-- <input class="formInput" type="email" name="email" id="email" autocapitalize="off" autocorrect="off" placeholder="Email?"/> -->
+                <!-- <textarea class="formInput" name="message" id="message" placeholder="Message?"></textarea> -->
 
-                      <br>
-                         <input class="submitForm" type="reset" value="Clear your message" />
-                         <input class="submitForm" type="submit" value="Send"/>
+                <!-- <br> -->
+                <!-- <input class="submitForm" type="reset" value="Clear your message" /> -->
+                <!-- <input class="submitForm" type="submit" value="Send"/> -->
 
-               </form>
+            <!-- </form> -->
+
+			<form id="contactForm" action="https://formspree.io/f/xnqobvoy" method="POST">
+				<input class="formInput" type="text" id="name" name="name" required placeholder="Your name" />
+				<input class="formInput" type="email" name="email" id="email" required placeholder="Your email" />
+				<textarea class="formInput" name="message" id="message" placeholder="Your message" required></textarea>
+				<br>
+				<input class="submitForm" type="reset" value="Clear your message" />
+                <input class="submitForm" type="submit" value="Send"/>
+			</form>
           </div>
         </div>
       </section>
@@ -90,26 +101,26 @@
     <footer>
       <div class="grid-container">
         <section class="grid-33 mobile-grid-100 tablet-grid-50">
-          <h3>Contact</h3>
+          <h3 style="margin-top: 20px;">Contact</h3>
           <p class="footer-contact">
-            For further information call me: <br>
-            <b class="phone">055-856-0689</b> <br> <br>
-            Forest Park Road <br>
-            Dundee, UK
+            For further information click <a href="contact.html">here</a>.<br>
+            +44 7749 469760<br>
+            <a href="mailto:velian.s.velikov@gmail.com">velian.s.velikov@gmail.com</a><br>
+            Aberdeen, UK
           </p>
         </section>
         <section class="grid-33 mobile-grid-100 tablet-grid-50">
           <h3>Social</h3>
           <ul class="social">
-            <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-            <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-            <li><a href="#" target="_blank"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://www.facebook.com/velian.s.velikov" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="https://twitter.com/VelianVelikov" target="_blank"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/velian-velikov/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="https://github.com/VelianVelikov" target="_blank"><i class="fab fa-github"></i></a></li>
           </ul>
         </section>
         <section class="grid-33 mobile-grid-100 tablet-grid-100">
           <h3>Pages</h3>
-          <p>
+          <p class="pages">
             <a href="index.html">Home</a> -
             <a href="projects.html">Projects</a> -
             <a href="about.html">About</a> -
@@ -118,7 +129,7 @@
         </section>
       </div>
       <section id="copyright">
-        This website violate copyright law and is subject to consequences: &copy; VSVPro.com, 2018
+        This website is subject to copyright and legal consequences may follow: &copy; VSVPro.com, 2020
       </section>
     </footer>
     <!-- End footer -->

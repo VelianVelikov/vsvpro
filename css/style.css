@@ -468,7 +468,7 @@ a.back-to-top:hover {
     color: #959595;
     overflow: hidden;
     box-shadow: inset 0px 11px 10px -10px #262626;
-    padding-top: 20px;
+    /* padding-top: 20px; */
   }
 
   footer h3 {
@@ -505,12 +505,20 @@ a.back-to-top:hover {
   footer a {
     color: #959595;
     text-decoration: none;
+  }
+
+  footer .pages a {
     text-transform: uppercase;
   }
 
-  footer a:hover,
-  footer a:focus {
+footer a:hover,
+footer a:focus {
   text-decoration: underline;
+}
+
+footer .social a:hover,
+footer .social a:focus {
+	color: #FFFFFF;
 }
 
 .social {
