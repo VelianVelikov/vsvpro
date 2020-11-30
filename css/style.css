@@ -426,11 +426,21 @@ a.back-to-top:hover {
   text-align: center
 }
 
+.second-wrapper h3 a {
+    color: #333333;
+    text-decoration: none;
+  }
+  
+.second-wrapper h3 a:hover,
+.second-wrapper h3 a:focus {
+  text-decoration: underline;
+}
+
 .second-wrapper .image img {
 	width: 100%;
 }
 
-.second-wrapper i {
+.second-wrapper .circle i {
   color: #f5f5f5;
   font-size: 555%;
   padding-top: 20%;
@@ -684,20 +694,20 @@ footer .grid-container section:nth-child(3) p{
 	margin: 5px 0;
 }
 
-.ccplus {width: 90%; background-color: #4CAF50;}
-.java {width: 80%; background-color: #2196F3;}
-.csharp {width: 65%; background-color: #f44336;}
-.sql {width: 60%; background-color: #808080;}
-.php {width: 55%; background-color: #fc913f;}
-.web {width: 40%; background-color: #f833ff;}
-.python {width: 30%; background-color: #fcde47;}
+.ccplus {width: 95%; background-color: #4CAF50;}
+.java {width: 90%; background-color: #f44336;}
+.csharp {width: 80%; background-color: #2196F3;}
+.php {width: 75%; background-color: #808080;}
+.sql {width: 75%; background-color: #fc913f;}
+.web {width: 70%; background-color: #7f188f;}
+.python {width: 50%; background-color: #fcde47;}
 
 .problem {width: 100%; background-color: #4CAF50;}
 .team {width: 95%; background-color: #f44336;}
 .analytic {width: 94%; background-color: #2196F3;}
 .learner {width: 85%; background-color: #808080;}
 .entrepreneur {width: 80%; background-color: #fc913f;}
-.maths {width: 101%; background-color: #f833ff;}
+.maths {width: 101%; background-color: #7f188f;}
 .robot {width: 55%; background-color: #fcde47;}
 
 /* End projects page */
